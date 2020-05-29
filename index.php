@@ -22,10 +22,6 @@ if(isset($input->message)){
 }
 
 if($text == "/start"){
-	$get = $botdata->onerow("SELECT * FROM members WHERE user_id = $userid");
-	if(!$get){
-		$botdata->query("INSERT INTO members ('user_id','langs') VALUES ('$userid', 'uz')");
-	}
 	$bot->sendMessage($userid,"CLFramework - $name",[
 		'parse_mode'=>"markdown",
 		'reply_markup'=>$plugins->Keyboards($home)
