@@ -1,8 +1,10 @@
 {
-    "repositories": [
+    "authors": [
         {
-            "type": "vcs",
-            "url": ""
+            "name": "Sardorbek"
+        },
+        {
+            "name": "Hali hechkim"
         }
     ],
     "autoload": {
