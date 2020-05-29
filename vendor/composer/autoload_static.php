@@ -23,7 +23,6 @@ class ComposerStaticInitbe671935ba550e0e59b4ef6ecd63e33a
     public static $classMap = array (
         'App\\CoderLast\\Framework' => __DIR__ . '/../..' . '/App/framework/framework.php',
         'App\\CoderLast\\Plugins' => __DIR__ . '/../..' . '/App/Plugins/Plugins.php',
-        'App\\mysql' => __DIR__ . '/../..' . '/App/mysql.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
