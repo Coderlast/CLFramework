@@ -77,13 +77,13 @@ if($text == "/start"){
 
 ## Pluginlar Ro'yhati
 
-            'getChatMemberOne',
-            'getChatMemberFull',
-            'Keyboards',
-            'setSession',
-            'getSession',
-            'stopSession',
-            'inlineKeyboard'
+            getChatMemberOne
+            getChatMemberFull
+            Keyboards
+            setSession
+            getSession
+            stopSession
+            inlineKeyboard
  
 
 ## Keyboards
