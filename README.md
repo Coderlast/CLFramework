@@ -71,10 +71,11 @@ if($text == "/start"){
   </tr>
 </table>
 
-#Plugins
+# Plugins
+
 <div align="center"><b>Botlar uchun maxsus yaratilgan pluginlarni ishlatish</b></div>
 
-##Pluginlar Ro'yhati
+## Pluginlar Ro'yhati
 
  
 ##
