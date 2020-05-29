@@ -24,7 +24,7 @@ $bot = new Framework($config['TOKEN']);
 $plugins = new Plugins($config['TOKEN']);
 
 
-$home = [["Hello word!", "Hello word!"]];
+$home = [["Hello word!", "Hello word !"]];
 
 $input = $bot->getInput();
 if(isset($input->message)){
