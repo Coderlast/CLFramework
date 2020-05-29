@@ -1,6 +1,7 @@
 <?php
 require __DIR__."/vendor/autoload.php";
 $config = require __DIR__.'/config.php';
+
 //
 use App\CoderLast\Framework;
 use App\CoderLast\Plugins;
@@ -8,7 +9,8 @@ use App\CoderLast\Plugins;
 $bot = new Framework($config['TOKEN']);
 $plugins = new Plugins($config['TOKEN']);
 
-$home = [["Hello word!", "Hello word !"]];
+
+$home = [["Hello word!", "Hello word!"]];
 
 $input = $bot->getInput();
 if(isset($input->message)){
@@ -17,11 +19,6 @@ if(isset($input->message)){
 	$text = $message->text;
 	$userid	= $message->from->id;
 	$name = $message->from->frist_name." ".$message->from->last_name;
-    $new_chat_member = $message->new_chat_member;
-    $newcmemid = $new_chat_member->id;
-    $new_chat_member_first_name = $new_chat_member->first_name;
-	$chat_title = $message->chat->title;
-	$chat_tip = $message->chat->type;
 }
 
 if($text == "/start"){
@@ -29,7 +26,7 @@ if($text == "/start"){
 	if(!$get){
 		$botdata->query("INSERT INTO members ('user_id','langs') VALUES ('$userid', 'uz')");
 	}
-	$bot->sendMessage($userid,"CLFramework",[
+	$bot->sendMessage($userid,"CLFramework - $name",[
 		'parse_mode'=>"markdown",
 		'reply_markup'=>$plugins->Keyboards($home)
 		]);
@@ -40,7 +37,7 @@ if($text == "/start"){
         $bot->sendMessage($chat_id, print_r($a,true));
     }
 
-    if($text == "Hello word !"){
+     if($text == "Hello word !"){
         $a = $plugins->getMethod();
         $bot->sendMessage($chat_id, print_r($a,true));
     }

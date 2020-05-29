@@ -31,11 +31,6 @@ if(isset($input->message)){
 	$text = $message->text;
 	$userid	= $message->from->id;
 	$name = $message->from->frist_name." ".$message->from->last_name;
-    $new_chat_member = $message->new_chat_member;
-    $newcmemid = $new_chat_member->id;
-    $new_chat_member_first_name = $new_chat_member->first_name;
-	$chat_title = $message->chat->title;
-	$chat_tip = $message->chat->type;
 }
 
 if($text == "/start"){
