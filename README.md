@@ -53,6 +53,11 @@ if($text == "/start"){
         $a = $bot->getMethod();
         $bot->sendMessage($chat_id, print_r($a,true));
     }
+
+     if($text == "Hello word !"){
+        $a = $plugins->getMethod();
+        $bot->sendMessage($chat_id, print_r($a,true));
+    }
 ```
 
 ## Malumotnoma
