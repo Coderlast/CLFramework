@@ -2,6 +2,7 @@
 
 <div align="center">
 
+<a href="https://core.telegram.org/bots/api">Telegram Bot API</a> <b>Foydalanish uchun yaratilgan</b> 
 [Telegram Bot API](https://core.telegram.org/bots/api) **Foydalanish uchun yaratilgan** 
 
 [Support Group](https://Telegram.me/CLFramework) **Telegram Guruximiz** 
