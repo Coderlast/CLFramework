@@ -72,9 +72,6 @@ if($text == "/start"){
 </table>
 
 # Plugins
-
-<div align="center"><b>Botlar uchun maxsus yaratilgan pluginlarni ishlatish</b></div>
-
 ## Pluginlar Ro'yhati
 
             getChatMemberOne
@@ -85,6 +82,7 @@ if($text == "/start"){
             stopSession
             inlineKeyboard
  
+<div align="center"><b>Botlar uchun maxsus yaratilgan pluginlarni ishlatish</b></div>
 
 ## Keyboards
 ```php
