@@ -1,0 +1,13 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": ""
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}
