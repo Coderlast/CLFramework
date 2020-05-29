@@ -53,22 +53,6 @@ if($text == "/start"){
     }
 ```
 
-## Malumotnoma
-
-**SQLite bazada** `members` **table bor** 
-<table>
-  <tr>
-    <th>ID</th>
-    <th>user_id</th>
-    <th>langs</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>936130343</td>
-    <td>uz</td>
-  </tr>
-</table>
-
 # Plugins
 ## Pluginlar Ro'yhati
 
