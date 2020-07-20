@@ -67,12 +67,8 @@ class Plugins{
     {
         $a = $this->bot("getChatMember", ['chat_id'=>$channel, 'user_id'=>$user_id])->result->status;
         $check = ["member", "creator", "administrator"];
-        if(array_search($a, $check)){
-            $result = true;
-        }else{
-            $result = false;
-        }
-        return $result;
+
+        return array_search($a, $check);
     }
     /**
      * @param array $channels
