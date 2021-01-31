@@ -14,5 +14,8 @@
     "autoload": {
         "files": ["config.php"],
         "classmap": ["App"]
+    },
+    "require": {
+        "thingengineer/mysqli-database-class": "dev-master"
     }
 }
