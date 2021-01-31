@@ -1,6 +1,6 @@
 <?php
 
-return  [
+$config = [
     'TOKEN'=>'',
     'admins' => ['594966461'],
     'channels'=>['@','@','@'],

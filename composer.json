@@ -3,6 +3,7 @@
     "license": "MIT",
     "keywords": ["Telegram Bot","Telegram Bot framework"],
     "autoload": {
+        "files": ["config.php"],
         "psr-4": {
             "App\\": "App/"
         }
