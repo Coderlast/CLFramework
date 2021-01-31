@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '577f21ecca837548c658f3c6d18ec93f1c139bb7',
+    'reference' => '713d6bc5eafc7f40d764e9ab1bded79fd196ae26',
     'name' => 'coderlast/clframework',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '577f21ecca837548c658f3c6d18ec93f1c139bb7',
+      'reference' => '713d6bc5eafc7f40d764e9ab1bded79fd196ae26',
     ),
     'thingengineer/mysqli-database-class' => 
     array (

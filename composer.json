@@ -12,7 +12,7 @@
     ],
     
     "autoload": {
-        "files": ["config.php"],
+        "files": ["config.php", "database/mysql.php"],
         "classmap": ["App"]
     },
     "require": {

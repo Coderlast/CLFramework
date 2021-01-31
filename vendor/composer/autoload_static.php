@@ -10,6 +10,7 @@ class ComposerStaticInitbe671935ba550e0e59b4ef6ecd63e33a
         '71ecd0286a4e74fd8732297fb587023c' => __DIR__ . '/..' . '/thingengineer/mysqli-database-class/MysqliDb.php',
         'd383f1ec7b1e54a09cb53eb6fcf751e0' => __DIR__ . '/..' . '/thingengineer/mysqli-database-class/dbObject.php',
         '012a62d9a23e60f93851b57aa97165bb' => __DIR__ . '/../..' . '/config.php',
+        '3a16a101fa72caf47ab130bee59ce7f4' => __DIR__ . '/../..' . '/database/mysql.php',
     );
 
     public static $classMap = array (
