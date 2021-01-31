@@ -16,6 +16,6 @@
         "classmap": ["App"]
     },
     "require": {
-        "thingengineer/mysqli-database-class": "dev-master"
+        "ozdemir/datatables": "2.*"
     }
 }

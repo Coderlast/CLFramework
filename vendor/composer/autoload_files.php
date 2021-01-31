@@ -6,8 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '71ecd0286a4e74fd8732297fb587023c' => $vendorDir . '/thingengineer/mysqli-database-class/MysqliDb.php',
-    'd383f1ec7b1e54a09cb53eb6fcf751e0' => $vendorDir . '/thingengineer/mysqli-database-class/dbObject.php',
     '012a62d9a23e60f93851b57aa97165bb' => $baseDir . '/config.php',
     '3a16a101fa72caf47ab130bee59ce7f4' => $baseDir . '/database/mysql.php',
 );
