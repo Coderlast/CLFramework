@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\CoderLast\\Framework' => $baseDir . '/App/framework/framework.php',
     'App\\CoderLast\\Plugins' => $baseDir . '/App/Plugins/Plugins.php',
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );
