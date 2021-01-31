@@ -14,7 +14,6 @@
 ```php
 <?php
 require __DIR__."/vendor/autoload.php";
-$config = require __DIR__.'/config.php';
 
 //
 use App\CoderLast\Framework;
@@ -79,7 +78,7 @@ inlineKeyboard
 ## GetChatMemberFull
 ```php
 <?php
-  $config = require __DIR__.'/config.php';
+  require __DIR__."/vendor/autoload.php";
   use App\CoderLast\Plugins;
   use App\CoderLast\Framework;
   $bot = new Framework($config['TOKEN']);

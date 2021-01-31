@@ -12,10 +12,9 @@ $config = [
     // mysql bilan bog'lanishni to'ldiring
     'mysql'=>[
         'host'=>"",
-        'dbname'=>"",
-        'user'=>"",
-        'pass'=>"",
-        'charset'=>"utf8mb4"
+        'database'=>"",
+        'username'=>"",
+        'password'=>"",
     ]
 
 ];
