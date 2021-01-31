@@ -56,13 +56,13 @@ if($text == "/start"){
 # Plugins
 ## Pluginlar Ro'yhati
 
-            getChatMemberOne
-            getChatMemberFull
-            Keyboards
-            setSession
-            getSession
-            stopSession
-            inlineKeyboard
+getChatMemberOne
+getChatMemberFull
+Keyboards
+setSession
+getSession
+stopSession
+inlineKeyboard
  
 <div align="center"><b>Botlar uchun maxsus yaratilgan pluginlarni ishlatish</b></div>
 

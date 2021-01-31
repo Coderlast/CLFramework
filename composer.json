@@ -1,12 +1,7 @@
 {
-    "authors": [
-        {
-            "name": "Sardorbek"
-        },
-        {
-            "name": "Hali hechkim"
-        }
-    ],
+    "name": "CLFramework",
+    "license": "MIT",
+    "keywords": ["Telegram Bot","Telegram Bot framework"],
     "autoload": {
         "psr-4": {
             "App\\": "App/"
