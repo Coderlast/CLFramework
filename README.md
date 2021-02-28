@@ -1,7 +1,6 @@
 <h1 align="center">CLFramework - CFL micro framework</h1>
 
 <div align="center">
-<body style="background-color : red;">
 <a href="https://core.telegram.org/bots/api">Telegram Bot API</a> <b>Foydalanish uchun yaratilgan</b> 
 <br>
 <a href="https://telegram.me/Clframework">Telegram Support Group</a> <b>Telegram Guruximiz</b> 
@@ -122,5 +121,4 @@ inlineKeyboard
 
 ?>
 ```
-</body>
 Copyright © 2020 CoderLast
