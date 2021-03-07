@@ -22,12 +22,12 @@ $config = [
 	"TOKEN"=>"bot tokeni",
 ];
 ```
-
-## index.php
+#### Kegin index.php fayl yaratamiz va uni ichiga 👇
 
 ```php
 <?php
 require "vendor/autoload.php";
+require "config.php";
 
 //
 use App\CoderLast\Framework;
@@ -66,75 +66,5 @@ if($text == "/start"){
     }
 ```
 
-# Plugins
-## Pluginlar Ro'yhati
-```
-getChatMemberOne
-getChatMemberFull
-Keyboards
-setSession
-getSession
-stopSession
-inlineKeyboard
-```
 
-<div align="center"><b>Botlar uchun maxsus yaratilgan pluginlarni ishlatish</b></div>
-
-## Keyboards
-```php
-<?php
-  
-  $bot->sendMessage("chat_id","text",['reply_markup'=>$plugins->Keyboards($keyboard)
-            ]);
-
-?>
-```
-
-## GetChatMemberFull
-```php
-<?php
-  require __DIR__."/vendor/autoload.php";
-  use App\CoderLast\Plugins;
-  use App\CoderLast\Framework;
-  $bot = new Framework($config['TOKEN']);
-  $plugins = new Plugins($config['TOKEN']);
-   
-  $input = $bot->getInput();
-    if(isset($input)){
-        $userid = $input->message->from->id;
-    }
-  $plugins->getChatMemberFull($config['channels'], $userid);
-
-?>
-```
-
-## Session
-```php
-<?php
-  $config = require __DIR__.'/config.php';
-  use App\CoderLast\Plugins;
-  use App\CoderLast\Framework;
-  $bot = new Framework($config['TOKEN']);
-  $plugins = new Plugins($config['TOKEN']);
-   
-  $input = $bot->getInput();
-
-    if(isset($input)){
-        $userid = $input->message->from->id;
-        $text = $input->message->text;
-    }
-    $session = $plugins->getSession($userid);
-    if($text == "/start"){
-     $bot->sendMessage($userid, "Ismingizni kiriting");
-     $plugins->setSession("ism", $userid);
-    }
-
-    if($session == "ism"){
-        // bazangizga saxlang kelgan habarni
-        $plugins->setSession($userid);
-        $bot->sendMessage($userid, 'Ismingiz Saxlandi');
-    }
-
-?>
-```
 Copyright © 2020 CoderLast
