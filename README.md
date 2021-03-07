@@ -10,13 +10,24 @@
 	<a href="https://telegram.me/Clframework">Telegram Support Group</a> <b>Telegram Guruximiz</b> 
 </div>
 
+## Ornatish - composer orqali
+```
+composer require coderlast/clframewrok
+```
+Composer orqali yuklaganigizdan kegin 
 
+*config.php* - fayl yarating va uni ichiga 👇
+```
+$config = [
+	"TOKEN"=>"bot tokeni",
+];
+```
 
 ## index.php
 
 ```php
 <?php
-require __DIR__."/vendor/autoload.php";
+require "vendor/autoload.php";
 
 //
 use App\CoderLast\Framework;
