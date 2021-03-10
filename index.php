@@ -1,15 +1,12 @@
 <?php
-require __DIR__."/vendor/autoload.php";
+require "vendor/autoload.php";
 
 //
 use App\CoderLast\Framework;
 use App\CoderLast\Plugins;
-use Ozdemir\Datatables\Datatables;
-use Ozdemir\Datatables\DB\MySQL;
 //
 $bot = new Framework($config['TOKEN']);
 $plugins = new Plugins($config['TOKEN']);
-$dt = new Datatables( new MySQL($config['mysql']) );
 
 $home = [["Hello word!", "Hello word!"]];
 

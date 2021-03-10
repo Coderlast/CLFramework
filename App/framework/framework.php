@@ -190,19 +190,44 @@ class Framework{
 
     /**
      * @param $chat_id
+     * @param $video
+     * @param string $caption
+     * @param array $params
+     * @return bool|string
+     */
+    public function sendVideo($chat_id, $video, $caption = '', $params = []){
+        return $this->bot('sendVideo', array_merge([
+            'chat_id'=>$chat_id,
+            'video' => $video,
+            'caption'=>$caption
+        ], $params));
+    }
+
+    /**
+     * @param $chat_id
      * @param $document
      * @param string $caption
      * @param array $params
      * @return bool|string
      */
     public function sendDocument($chat_id, $document, $caption = '', $params = []){
-        return $this->bot('sendPhoto', array_merge([
+        return $this->bot('sendDocument', array_merge([
             'chat_id'=>$chat_id,
-            'Document' => $document,
+            'document' => $document,
             'caption'=>$caption
         ], $params));
     }
 
+    /**
+     * @param $chat_id
+     * @param array $params
+     * @return bool|string
+     */
+    public function getUserProfilePhotos($chat_id, $params = []){
+        return $this->bot('getUserProfilePhotos', array_merge([
+            'chat_id'=>$chat_id,
+        ], $params));
+    }
 
     /**
      * @param $chat_id
@@ -214,11 +239,20 @@ class Framework{
     public function sendAudio($chat_id, $audio, $caption = '', $params = []){
         return $this->bot('sendAudio', array_merge([
             'chat_id'=>$chat_id,
-            'photo' => $photo,
+            'audio' => $audio,
             'caption'=>$caption
         ], $params));
     }
 
+    // answerInlineQuery
+
+    public function answerInlineQuery($inline_query_id, $audio, $results, $params = []){
+        return $this->bot('answerInlineQuery', array_merge([
+            'inline_query_id'=>$inline_query_id,
+            'is_personal' => true,
+            'results'=>$caption
+        ], $params));
+    }
     /**
      * @param $id
      * @param $action
