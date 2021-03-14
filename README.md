@@ -12,7 +12,7 @@
 
 ## Ornatish - composer orqali
 ```
-composer require coderlast/clframewrok
+composer require coderlast/clframework
 ```
 Composer orqali yuklaganigizdan kegin 
 
