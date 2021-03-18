@@ -2,7 +2,7 @@
     "name": "coderlast/clframework",
     "description": "Framework Telegram bots",
     "license": "MIT",
-    "keywords": ["Telegram Bot","Telegram Bot framework"],
+    "keywords": ["Telegram Bot","Telegram Bot framework","BotApp","BotPlugin"],
     "homepage": "https://coderlast.github.io/CLFramework/",
     "authors": [
         {
