@@ -3,5 +3,10 @@
 $config = [
     'TOKEN'=>"",
     'ADMINNAME'=>"",
-    "USERS DATABASE"=>"",
+    "DataBase"=>[
+        'host'=>'hostname',
+        'user'=>'username',
+        'password'=>'password'
+        'dbname'=>'databasename',
+    ],
 ];
