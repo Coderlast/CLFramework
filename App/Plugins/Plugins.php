@@ -46,7 +46,7 @@ class Plugins{
      */
     public function bot($method,$params=[])
     {
-      $url = "https://api.telegram.org/bot".$this->token."/".$method;
+        $url = "https://api.telegram.org/bot".$this->token."/".$method;
 
         curl_setopt($this->ch,CURLOPT_URL,$url);
         curl_setopt($this->ch,CURLOPT_RETURNTRANSFER,true);
@@ -89,7 +89,6 @@ class Plugins{
             if(! array_search($a, $check)) {
                 $result['status'] = false;
             }
-
         }
 
         return $result;
@@ -101,28 +100,25 @@ class Plugins{
      */
     public function Keyboards(array $array, $resize = true)
     {
-
-        return json_encode(['resize_keyboard' => $resize,'keyboard' => $array,]);;
+        return json_encode(['resize_keyboard' => $resize,'keyboard' => $array]);
     }
     public function setSession($session, $id)
     {
-        file_put_contents("log/$id.session", "$session");
+        file_put_contents("log/{$id}.session", "{$session}");
     }
     public function getSession($id)
     {
-        $a = file_get_contents("log/$id.session");
+        $a = file_get_contents("log/{$id}.session");
         return $a;
     }
     public function stopSession($id)
     {
-        $a = unlink("log/$id.session");
+        $a = unlink("log/{$id}.session");
         return $a;
     }
     public function inlineKeyboard(array $data){
         return json_encode([
-            'inline_keyboard'=>$data
+            'inline_keyboard' => $data
         ]);
     }
-
-
 }
