@@ -16,7 +16,7 @@ class mysql{
             $charset = $dbs['charset']; 
             $this->conDB = TRUE;
             try {
-                $this->connection = new PDO("mysql:host=$host;dbname=$dbname;charset=$charset", $user, $pass, $options);
+                $this->connection = new PDO("mysql:host={$host};dbname={$dbname};charset={$charset}", $user, $pass, $options);
             } catch (PDOException $e) {
                 throw new PDOException($e->getMessage(), (int)$e->getCode());
             }
@@ -74,7 +74,7 @@ class mysql{
     public function count($table_name)
     {
         try {
-            $stmt = $this->connection->prepare("SELECT * FROM " . $table_name);
+            $stmt = $this->connection->prepare("SELECT * FROM {$table_name}");
             $stmt->execute();
             return $stmt->rowCount();
         } catch (PDOException $e) {
