@@ -19,18 +19,20 @@ if(isset($input->message)){
 	$name = $message->from->frist_name." ".$message->from->last_name;
 }
 
-if($text == "/start"){
-	$bot->sendMessage($userid,"CLFramework - $name",[
-		'parse_mode'=>"markdown",
-		'reply_markup'=>$plugins->Keyboards($home)
-		]);
-}
-
-if($text == "Hello word!"){
-    $a = $bot->getMethod();
-    $bot->sendMessage($chat_id, print_r($a,true));
-}
-if($text == "Hello word !"){
-    $a = $plugins->getMethod();
-    $bot->sendMessage($chat_id, print_r($a,true));
+switch ($text)
+{
+    case "/start":
+        $bot->sendMessage($userid,"CLFramework - $name",[
+            'parse_mode'=>"markdown",
+            'reply_markup'=>$plugins->Keyboards($home)
+        ]);
+    break;
+    case "Hello word!":
+        $a = $bot->getMethod();
+        $bot->sendMessage($chat_id, print_r($a,true));
+    break;
+    case "Hello word !":
+        $a = $plugins->getMethod();
+        $bot->sendMessage($chat_id, print_r($a,true));
+    break;
 }
