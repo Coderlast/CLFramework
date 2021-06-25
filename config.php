@@ -6,7 +6,7 @@ $config = [
     "DataBase"=>[
         'host'=>'hostname',
         'user'=>'username',
-        'password'=>'password'
+        'password'=>'password',
         'dbname'=>'databasename',
     ],
 ];
