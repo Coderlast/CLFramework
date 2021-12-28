@@ -245,6 +245,7 @@ class Framework{
             'first_name' => $first_name
         ], $params));
     }
+    
 
     public function answerInlineQuery($inline_id, $audio_url, $title, $params = []){
         return $this->bot('answerInlineQuery',[
