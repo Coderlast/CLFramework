@@ -1,6 +1,6 @@
 <?php
 require "vendor/autoload.php";
-
+require "config.php";
 //
 use App\CoderLast\Framework;
 use App\CoderLast\Plugins;
