@@ -16,7 +16,7 @@ if(isset($input->message)){
 	$chat_id = $message->chat->id;
 	$text = $message->text;
 	$userid	= $message->from->id;
-	$name = $message->from->frist_name." ".$message->from->last_name;
+	$name = $message->from->first_name." ".$message->from->last_name;
 }
 
 switch ($text)
