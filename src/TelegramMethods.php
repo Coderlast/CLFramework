@@ -10,7 +10,7 @@ namespace App\CoderLast;
  * Class Framework
  * @package App\Framework
  */
-class Framework{
+class TelegramMethods{
 
     private $token;
     private $ch;
@@ -259,5 +259,3 @@ class Framework{
     }
 
 }
-
-

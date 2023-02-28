@@ -5,9 +5,9 @@ class sqlite{
     protected $db;
     protected $sql;
 
-    public function __construct($joylashuv){
-	$this->db = new PDO('sqlite:'.$joylashuv);
-	$this->sql = new SQLite3($joylashuv);
+    public function __construct($path){
+	$this->db = new PDO('sqlite:'.$path);
+	$this->sql = new SQLite3($path);
     }
 
     public function query($sql, $params = []) {

@@ -1,11 +1,11 @@
 <?php
 require "vendor/autoload.php";
 
-use App\CoderLast\Framework;
+use App\CoderLast\TelegramMethods;
 use App\CoderLast\Plugins;
 //
-$bot = new Framework($config['TOKEN']);
-$plugins = new Plugins($config['TOKEN']);
+$bot = new TelegramMethods("YOUR_TELEGRAM_BOT_TOKEN");
+$plugins = new Plugins("YOUR_TELEGRAM_BOT_TOKEN");
 
 $home = [["Hello word!", "Hello word!"]];
 
