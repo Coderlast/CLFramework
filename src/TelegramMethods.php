@@ -3,12 +3,12 @@
 /**
  * CoderLast
  * 19.05.2020
- * micro Framework
+ * micro TelegramMethods
  */
 namespace App\CoderLast;
 /**
- * Class Framework
- * @package App\Framework
+ * Class TelegramMethods
+ * @package App\TelegramMethods
  */
 class TelegramMethods{
 
