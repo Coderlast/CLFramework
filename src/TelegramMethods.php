@@ -180,6 +180,7 @@ class TelegramMethods{
      * @param array $params
      * @return bool|string
      */
+    
     public function sendPhoto($chat_id, $photo, $caption = '', $params = []){
         return $this->bot('sendPhoto', array_merge([
             'chat_id'=>$chat_id,
@@ -198,7 +199,7 @@ class TelegramMethods{
     public function sendDocument($chat_id, $document, $caption = '', $params = []){
         return $this->bot('sendDocument', array_merge([
             'chat_id'=>$chat_id,
-            'Document' => $document,
+            'document' => $document,
             'caption'=>$caption
         ], $params));
     }
@@ -246,16 +247,5 @@ class TelegramMethods{
         ], $params));
     }
     
-
-    public function answerInlineQuery($inline_id, $audio_url, $title, $params = []){
-        return $this->bot('answerInlineQuery',[
-            'inline_query_id' => $inline_id,
-            'results'=>array_merge([
-                'type'=>'audio',
-                'audio_url'=>$audio_url,
-                'title'=>$title
-            ],$params)
-        ]);
-    }
 
 }
